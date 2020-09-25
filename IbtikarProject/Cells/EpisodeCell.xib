@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EpisodeCell" customModule="IbtikarProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="319"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="319"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fs-HV-WON">
+                        <rect key="frame" x="16" y="8" width="407" height="303"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lnm-Zx-kk7" customClass="ShadowImage" customModule="IbtikarProject" customModuleProvider="target">
+                                <rect key="frame" x="4" y="4.5" width="399" height="199"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0OO-nU-dRX">
+                                <rect key="frame" x="4" y="208" width="399" height="91"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0OO-nU-dRX" secondAttribute="bottom" constant="4" id="43x-Dw-Qcc"/>
+                            <constraint firstItem="0OO-nU-dRX" firstAttribute="top" secondItem="Lnm-Zx-kk7" secondAttribute="bottom" constant="4" id="9OZ-hq-qls"/>
+                            <constraint firstAttribute="trailing" secondItem="0OO-nU-dRX" secondAttribute="trailing" constant="4" id="N7c-nn-ibi"/>
+                            <constraint firstItem="Lnm-Zx-kk7" firstAttribute="leading" secondItem="8fs-HV-WON" secondAttribute="leading" constant="4" id="OOD-l1-rMd"/>
+                            <constraint firstItem="0OO-nU-dRX" firstAttribute="leading" secondItem="8fs-HV-WON" secondAttribute="leading" constant="4" id="OYj-Ro-itE"/>
+                            <constraint firstAttribute="trailing" secondItem="Lnm-Zx-kk7" secondAttribute="trailing" constant="4" id="VTj-Te-omz"/>
+                            <constraint firstItem="Lnm-Zx-kk7" firstAttribute="height" secondItem="8fs-HV-WON" secondAttribute="height" multiplier="0.660066" id="o3h-Cd-eoi"/>
+                            <constraint firstItem="Lnm-Zx-kk7" firstAttribute="top" secondItem="8fs-HV-WON" secondAttribute="top" constant="4" id="qbh-i1-7QM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8fs-HV-WON" secondAttribute="trailing" constant="16" id="Mtt-3s-OH6"/>
+                <constraint firstItem="8fs-HV-WON" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="VIQ-s2-tJz"/>
+                <constraint firstAttribute="bottom" secondItem="8fs-HV-WON" secondAttribute="bottom" constant="8" id="hBM-5Z-8xX"/>
+                <constraint firstItem="8fs-HV-WON" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="vxC-gG-OXr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="439" height="319"/>
+            <connections>
+                <outlet property="imgView" destination="Lnm-Zx-kk7" id="1Ao-ek-DDm"/>
+                <outlet property="lblTitle" destination="0OO-nU-dRX" id="b6y-9N-Ecu"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="174.44196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="folder.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

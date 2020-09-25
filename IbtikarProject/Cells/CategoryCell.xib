@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCell" customModule="IbtikarProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="557" height="314"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="557" height="314"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T31-md-Qrx">
+                        <rect key="frame" x="0.0" y="0.0" width="557" height="314"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHn-ha-MDh" customClass="ShadowLabel" customModule="IbtikarProject" customModuleProvider="target">
+                                <rect key="frame" x="8" y="4" width="541" height="306"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FHn-ha-MDh" firstAttribute="leading" secondItem="T31-md-Qrx" secondAttribute="leading" constant="8" id="1km-ia-GOQ"/>
+                            <constraint firstItem="FHn-ha-MDh" firstAttribute="top" secondItem="T31-md-Qrx" secondAttribute="top" constant="4" id="8Iv-nO-hZu"/>
+                            <constraint firstAttribute="trailing" secondItem="FHn-ha-MDh" secondAttribute="trailing" constant="8" id="H1P-E6-46j"/>
+                            <constraint firstAttribute="bottom" secondItem="FHn-ha-MDh" secondAttribute="bottom" constant="4" id="ycP-aB-UMU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="T31-md-Qrx" secondAttribute="bottom" id="gas-Fw-f9T"/>
+                <constraint firstAttribute="trailing" secondItem="T31-md-Qrx" secondAttribute="trailing" id="o43-NS-VSJ"/>
+                <constraint firstItem="T31-md-Qrx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pCy-Qh-oQl"/>
+                <constraint firstItem="T31-md-Qrx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sq3-P8-CLi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="557" height="314"/>
+            <connections>
+                <outlet property="lblCategory" destination="FHn-ha-MDh" id="6JO-mo-bet"/>
+                <outlet property="mainView" destination="T31-md-Qrx" id="EO5-XK-aHM"/>
+            </connections>
+            <point key="canvasLocation" x="-229.71014492753625" y="192.85714285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>

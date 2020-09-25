@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bgo-Ee-Apv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplachVC-->
+        <scene sceneID="Fcb-49-2mg">
+            <objects>
+                <viewController storyboardIdentifier="SplachVC" id="bgo-Ee-Apv" customClass="SplachVC" customModule="IbtikarProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JAE-E5-I3O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ibtikar" translatesAutoresizingMaskIntoConstraints="NO" id="F12-m9-Nvl">
+                                <rect key="frame" x="39" y="358.5" width="336" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="F12-m9-Nvl" secondAttribute="height" multiplier="15:8" id="Rt4-Ev-CRM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="F12-m9-Nvl" firstAttribute="height" secondItem="JAE-E5-I3O" secondAttribute="height" multiplier="0.2" id="FXx-y3-CwZ"/>
+                            <constraint firstItem="F12-m9-Nvl" firstAttribute="centerX" secondItem="JAE-E5-I3O" secondAttribute="centerX" id="J8E-2g-uni"/>
+                            <constraint firstItem="F12-m9-Nvl" firstAttribute="centerY" secondItem="JAE-E5-I3O" secondAttribute="centerY" id="djy-1L-Eda"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZpD-SB-OMA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8v-uk-tEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-620" y="114"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="IbtikarProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="300" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tkf-jD-aSq" customClass="TanibleView" customModule="IbtikarProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11780906469999999" green="0.1253554821" blue="0.1333346665" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tkf-jD-aSq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0uw-Wx-lbo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tkf-jD-aSq" secondAttribute="trailing" id="U3M-5y-rBq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tkf-jD-aSq" secondAttribute="bottom" id="eDx-mc-uQP"/>
+                            <constraint firstItem="tkf-jD-aSq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l4S-dL-EDh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewEpisode" destination="tkf-jD-aSq" id="SgF-oi-KmN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ibtikar" width="300" height="150"/>
+    </resources>
+</document>
